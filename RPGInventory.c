@@ -5,9 +5,10 @@
 #define MAX_INV_SIZE 8 
 
 typedef struct{
-        int value;
-        char rarity;
-        char name[32];
+    char name[32]; //32 bytes    
+    int value; //4 bytes
+    char rarity; //1 byte
+    //optimal struct managment for memory
     } items;
 
 //initializes inventory and it's slots used up to 0
